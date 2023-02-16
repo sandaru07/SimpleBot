@@ -5,11 +5,11 @@ let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let menu = `
 ╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-║➤ *✨𝗛ola, ${taguser} :D*
+║➤ *✨HI, ${taguser} :D*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ╰══╡✯✯✯✯✯✯✯✯╞══╯
 ┏━━━━━━━━━━━━━┓
-┃ *< COMANDOS >*
+┃ *< COMMANDS >*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ඬ⃟💫 _a_
 ┣ ඬ⃟💫 _${usedPrefix}cat_
@@ -72,9 +72,9 @@ let menu = `
 ┗━━━━━━━━━━━━━┛
 `.trim()
 let buttons = [
-{ buttonId: '#owner', buttonText: { displayText: '💫 𝐎𝐖𝐍𝐄𝐑 💫' }, type: 1 },
-{ buttonId: '#runtime', buttonText: { displayText: '⏰ 𝐑𝐔𝐍𝐓𝐈𝐌𝐄 ⏰' }, type: 1 },
-{ buttonId: '#infohost', buttonText: { displayText: '👑 𝐈𝐍𝐅𝐎𝐇𝐎𝐒𝐓 👑' }, type: 1 }]
+{ buttonId: '#owner', buttonText: { displayText: 'OWNER' }, type: 1 },
+{ buttonId: '#runtime', buttonText: { displayText: 'RUNTIME' }, type: 1 },
+{ buttonId: '#infohost', buttonText: { displayText: 'INFO HOST' }, type: 1 }]
 let buttonMessage = {
 image: fs.readFileSync('./Menu2.jpg'),
 caption: menu.trim(),
@@ -91,7 +91,7 @@ mediaUrl: null,
 title: '👑 𝐀𝐜𝐢𝐝𝐢𝐜𝐍𝐨𝐝𝐞𝐬 𝐇𝐨𝐬𝐭 👑',
 body: null,
 thumbnail: fs.readFileSync('./src/logo.png'),
-sourceUrl: `https://chat.whatsapp.com/F0fU7LSlBBcBm6ny5fVSuT`
+sourceUrl: `https://chat.whatsapp.com`
 }}}
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
