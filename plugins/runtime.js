@@ -2,8 +2,8 @@ let handler = async (m, { conn }) => {
 let _uptime = process.uptime() * 1000
 let uptime = clockString(_uptime)
 m.reply(`
-*┌─〔 ＡＣＴＩＶＯ 〕*
-*├ 𝚃𝙸𝙴𝙼𝙿𝙾 𝙰𝙲𝚃𝙸𝚅𝙾: ${uptime}*
+*┌─〔 ACTIVE TIME 〕*
+*├ TIME ⌚: ${uptime}*
 *└───────────────*
 `.trim())}
 handler.help = ['runtime']
