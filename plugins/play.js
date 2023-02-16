@@ -13,20 +13,20 @@ let vid = results.all.find(video => video.seconds < 3600)
 let { dl_link, thumb, title, filesize, filesizeF } = await (/2$/.test(command) ? ytv : yta)(vid.url, 'id4')
 let shortUrl = await (await fetch(`https://tinyurl.com/api-create.php?url=${dl_link}`)).text()
 conn.sendFile(m.chat, thumb, 'error.jpg', `
-📌 *𝚃𝙸𝚃𝚄𝙻𝙾:* ${title}
-*📁 𝙿𝙴𝚂𝙾:* ${filesizeF}
-*🔗 𝚄𝚁𝙻:* ${vid.url}
-*📥 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁:* ${shortUrl}
+📌 *TITLE:* ${title}
+*📁 SIZE:* ${filesizeF}
+*🔗 URL:* ${vid.url}
+*📥 UPLOAD:* ${shortUrl}
 `.trim(), m, false, { 
 contextInfo: { externalAdReply: {
-title: 'ʀᴇᴘʀᴏᴅᴜᴄᴛᴏʀ ᴅᴇ ʏᴏᴜᴛᴜʙᴇ',
+title: 'SONG DOWNLOAD',
 body: '©𝑆𝑖𝑚𝑝𝑙𝑒𝐵𝑜𝑡', 
-sourceUrl: `https://github.com/BrunoSobrino/SimpleBot`, 
+sourceUrl: `https://github.com/sandaru07`, 
 thumbnail: fs.readFileSync('./Menu2.jpg') }}})
 conn.sendFile(m.chat, dl_link, title + '.mp' + (3 + /2$/.test(command)), `
-*📌 𝚃𝙸𝚃𝚄𝙻𝙾:* ${title}
-*📁 𝙿𝙴𝚂𝙾:* ${filesizeF}
-*🔗 𝚄𝚁𝙻:* ${vid.url}
+*📌 TITLE:* ${title}
+*📁 SIZE:* ${filesizeF}
+*🔗 URL:* ${vid.url}
 `.trim(), m)
 } catch {
 try {
@@ -37,7 +37,7 @@ let json = await res.json()
 conn.sendMessage(m.chat, { audio: { url: json.result.audio }, mimetype: 'audio/mp4', fileName: json.result.title + `.mp3`}, {quoted: m})
 
 } catch  {
-m.reply('*[❗] 𝙴𝚁𝚁𝙾𝚁*')
+m.reply('*[❗] ERROR*')
 }}}
 handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
 handler.tags = ['general']
