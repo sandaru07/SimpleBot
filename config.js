@@ -1,15 +1,15 @@
 //============= Datos del Bot =============//
 
-global.owner = ['5219996125657']
+global.owner = ['447710173736']
 global.packname = '(☞ﾟ∀ﾟ)☞'
-global.author = '𝕊𝕚𝕞𝕡𝕝𝕖𝔹𝕠𝕥'
-global.wm = '𝕊𝕚𝕞𝕡𝕝𝕖𝔹𝕠𝕥'
-global.wait = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
+global.author = 'XCOCO'
+global.wm = 'XCOCO'
+global.wait = '*[❗] PLEASE WAIT...*'
 
 //============= urlButtons =============//
 
-global.textUrlbot = 'ɪɴꜱᴛᴀɢʀᴀᴍ'
-global.linkUrlbot = "https://www.instagram.com/ilmanhdyt_"
+global.textUrlbot = 'SUPPORT GROUP'
+global.linkUrlbot = "https://wa.me/"
 
 //=========================================================================//
 
